@@ -47,7 +47,7 @@ class InpaintCrop:
                 "min_height": ("INT", {"default": 512, "min": 0, "max": nodes.MAX_RESOLUTION, "step": 1}), # ranged
                 "max_width": ("INT", {"default": 768, "min": 0, "max": nodes.MAX_RESOLUTION, "step": 1}), # ranged
                 "max_height": ("INT", {"default": 768, "min": 0, "max": nodes.MAX_RESOLUTION, "step": 1}), # ranged
-                "padding": ([8, 16, 32, 64, 128, 256, 512], {"default": 32}), # free and ranged
+                "padding": ([0,1,2,3,4,5,6,7,8, 16, 32, 64, 128, 256, 512], {"default": 32}), # free and ranged
            },
            "optional": {
                 "optional_context_mask": ("MASK",),
